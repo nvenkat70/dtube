@@ -11,7 +11,7 @@ module.exports = {
       network_id: "*"
     },
     matic: {
-      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://rpc-mumbai.maticvigil.com/v1/bd76d9f2e2c3993bbfef0082f25c30d017fc1feb`),
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://rpc-mumbai.matic.today`),
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
@@ -31,7 +31,7 @@ module.exports = {
       gasPrice: 10000000000,
     },
     ropsten: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           process.env.MNEMONIC,
           process.env.INFURA_ROPSTEN
